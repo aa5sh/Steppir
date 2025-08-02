@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>greenchk.svg.png</file>
+        <file>redx.png</file>
+    </qresource>
+</RCC>

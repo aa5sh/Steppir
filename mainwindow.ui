@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>370</width>
+    <height>204</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>370</width>
+    <height>204</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>370</width>
+    <height>204</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>11</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Send to Steppir</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="SteppirFreq">
+    <property name="geometry">
+     <rect>
+      <x>163</x>
+      <y>33</y>
+      <width>102</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Courier New</family>
+      <pointsize>18</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>14.175</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>163</x>
+      <y>11</y>
+      <width>102</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tuned To</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="FreqToSteppir">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>33</y>
+      <width>102</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Courier New</family>
+      <pointsize>18</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>14.175</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bSendToSteppir">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>30</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Go</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pFastDown">
+    <property name="geometry">
+     <rect>
+      <x>274</x>
+      <y>30</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;&lt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pSlowDown">
+    <property name="geometry">
+     <rect>
+      <x>274</x>
+      <y>56</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pSlowUp">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>56</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pFastUp">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>30</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&gt;&gt;</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>7</x>
+      <y>60</y>
+      <width>251</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Bands</string>
+    </property>
+    <widget class="QPushButton" name="p80m">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>40</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>80</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="p60m">
+     <property name="geometry">
+      <rect>
+       <x>55</x>
+       <y>20</y>
+       <width>40</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>60</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="p40m">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>20</y>
+       <width>40</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>40</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="p30m">
+     <property name="geometry">
+      <rect>
+       <x>145</x>
+       <y>20</y>
+       <width>40</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>30</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="p20m">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>20</y>
+       <width>40</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>20</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="p10m">
+     <property name="geometry">
+      <rect>
+       <x>145</x>
+       <y>46</y>
+       <width>40</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>10</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="p15m">
+     <property name="geometry">
+      <rect>
+       <x>55</x>
+       <y>46</y>
+       <width>40</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>15</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="p17m">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>46</y>
+       <width>40</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>17</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="p6m">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>46</y>
+       <width>40</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>6</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="p12m">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>46</y>
+       <width>40</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>12</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pNormal">
+    <property name="geometry">
+     <rect>
+      <x>274</x>
+      <y>90</y>
+      <width>89</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Normal</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p180">
+    <property name="geometry">
+     <rect>
+      <x>274</x>
+      <y>116</y>
+      <width>89</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>180</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p34">
+    <property name="geometry">
+     <rect>
+      <x>274</x>
+      <y>168</y>
+      <width>89</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>3/4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pBiDir">
+    <property name="geometry">
+     <rect>
+      <x>274</x>
+      <y>142</y>
+      <width>89</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Bi-Dir</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pAuto">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>142</y>
+      <width>80</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Auto</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pCalibrate">
+    <property name="geometry">
+     <rect>
+      <x>93</x>
+      <y>142</y>
+      <width>80</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Calibrate</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pHome">
+    <property name="geometry">
+     <rect>
+      <x>178</x>
+      <y>142</y>
+      <width>80</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Home</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="statusSteppir">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>174</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel { background-color: red; color: white; }</string>
+    </property>
+    <property name="text">
+     <string>Steppir</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="statusQLog">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>174</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel { background-color: red; color: white; }</string>
+    </property>
+    <property name="text">
+     <string>QLog</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="statusTuning">
+    <property name="geometry">
+     <rect>
+      <x>179</x>
+      <y>174</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel { background-color: red; color: white; }</string>
+    </property>
+    <property name="text">
+     <string>Tuning</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pControllerSwap">
+    <property name="geometry">
+     <rect>
+      <x>274</x>
+      <y>4</y>
+      <width>89</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>House</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
