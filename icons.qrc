@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>greenchk.svg.png</file>
-        <file>redx.png</file>
+        <file>steppir.icns</file>
     </qresource>
 </RCC>
